@@ -25,12 +25,14 @@ cc_library_static {
     shared_libs: [
         "libbase",
     ],
+    sdclang: true,
 }
 
 // Bluetooth Binder shared library
 cc_library_static {
     name: "libbluetooth-binder-common",
     defaults: ["fluoride_defaults"],
+    sdclang: true,
     cflags: [
         /* we export all classes, so change default visibility, instead of having EXPORT_SYMBOL on each class*/
         "-fvisibility=default",

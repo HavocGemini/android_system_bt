@@ -108,7 +108,7 @@ cc_library_static {
         "lib-bt-packets",
     ],
     cflags: ["-DBUILDCFG"],
-
+    sdclang: true,
 }
 
 // btif unit tests for target

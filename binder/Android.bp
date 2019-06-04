@@ -1,3 +1,4 @@
+//
 cc_library_shared {
     name: "libbluetooth-binder",
     product_variables: {
@@ -78,6 +79,7 @@ cc_library_shared {
         "-Wextra",
         "-Wno-unused-parameter",
     ],
+    sdclang: true,
 }
 
 // AIDL interface between libbluetooth-binder and framework.jar

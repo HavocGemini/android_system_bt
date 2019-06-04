@@ -1,6 +1,8 @@
+//
 cc_library_static {
     name: "libudrv-uipc",
     defaults: ["fluoride_defaults"],
+    sdclang: true,
     srcs: [
         "ulinux/uipc.cc",
     ],

@@ -1,3 +1,4 @@
+//
 cc_defaults {
     name: "fluoride_bta_defaults",
     defaults: ["fluoride_defaults"],
@@ -27,6 +28,7 @@ cc_defaults {
     ],
     header_libs: ["libbluetooth_headers"],
     cflags: ["-DBUILDCFG"],
+    sdclang: true,
 }
 
 // BTA static library for target
@@ -118,6 +120,7 @@ cc_library_static {
     whole_static_libs: [
         "libaudio-hearing-aid-hw-utils",
     ],
+    sdclang: true,
 }
 
 // bta unit tests for target

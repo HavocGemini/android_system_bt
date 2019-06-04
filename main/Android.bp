@@ -1,9 +1,9 @@
-
 // Bluetooth main HW module / shared library for target
 // ========================================================
 cc_library_shared {
     name: "libbluetooth",
     defaults: ["fluoride_defaults"],
+    sdclang: true,
     header_libs: ["libbluetooth_headers"],
     export_header_lib_headers: ["libbluetooth_headers"],
     srcs: [
@@ -98,7 +98,7 @@ cc_library_shared {
 cc_library_static {
     name: "libbluetooth-for-tests",
     defaults: ["fluoride_defaults"],
-
+    sdclang: true,
     srcs: [
         "bte_conf.cc",
         "bte_init.cc",

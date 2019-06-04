@@ -37,5 +37,6 @@ cc_binary {
     static_libs: [
       "libbtcore",
       "libosi",
-    ]
+    ],
+    sdclang: true,
 }

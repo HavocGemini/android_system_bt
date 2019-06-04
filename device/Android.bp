@@ -22,6 +22,7 @@ cc_library_static {
     shared_libs: [
         "liblog",
     ],
+    sdclang: true,
 }
 
 // Bluetooth device unit tests for target

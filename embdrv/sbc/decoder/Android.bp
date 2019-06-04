@@ -23,4 +23,5 @@ cc_library_static {
         "include",
         "srce",
     ],
+    sdclang: true,
 }

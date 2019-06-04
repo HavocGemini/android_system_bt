@@ -1,6 +1,8 @@
+//
 cc_library_static {
     name: "lib-bt-packets-base",
     defaults: ["libchrome_support_defaults"],
+    sdclang: true,
     export_include_dirs: ["./"],
     host_supported: true,
     srcs: [

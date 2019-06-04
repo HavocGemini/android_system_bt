@@ -52,7 +52,8 @@ cc_library_static {
     ],
     static_libs: [
         "libbluetooth-types",
-    ]
+    ],
+    sdclang: true,
 }
 
 // test-vendor unit tests for host

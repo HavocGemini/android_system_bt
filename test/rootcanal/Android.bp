@@ -54,6 +54,7 @@ cc_binary {
         "system/bt/stack/include",
     ],
     init_rc: ["android.hardware.bluetooth@1.0-service.sim.rc"],
+    sdclang: true,
 }
 
 cc_library_shared {
@@ -93,4 +94,5 @@ cc_library_shared {
         "system/bt/internal_include",
         "system/bt/stack/include",
     ],
+    sdclang: true,
 }

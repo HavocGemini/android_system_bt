@@ -39,5 +39,6 @@ cc_binary {
         "-std=c99",
     ],
     init_rc: ["android.hardware.bluetooth@1.0-service.btlinux.rc"],
+    sdclang: true,
 }
 

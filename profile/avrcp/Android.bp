@@ -1,6 +1,8 @@
+//
 cc_library_static {
     name: "avrcp-target-service",
     defaults: ["fluoride_defaults"],
+    sdclang: true,
     host_supported: true,
     include_dirs: [
         "system/bt",

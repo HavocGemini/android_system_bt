@@ -1,3 +1,4 @@
+//
 subdirs = [
     "common",
 ]
@@ -67,6 +68,7 @@ btserviceBaseTestSrc = [
 cc_binary {
     name: "bluetoothtbd",
     defaults: ["fluoride_service_defaults"],
+    sdclang: true,
     srcs: btserviceBinderDaemonSrc +
     btserviceLinuxSrc +
     btserviceDaemonSrc +
@@ -149,6 +151,7 @@ cc_test {
 cc_binary {
     name: "bluetooth-cli",
     defaults: ["fluoride_defaults"],
+    sdclang: true,
     srcs: ["client/main.cc"],
     static_libs: [
         "libbluetooth-binder-common",
@@ -164,6 +167,7 @@ cc_binary {
 cc_binary {
     name: "bt-example-hr-server",
     defaults: ["fluoride_defaults"],
+    sdclang: true,
     local_include_dirs: ["example/heart_rate"],
     srcs: [
         "example/heart_rate/heart_rate_server.cc",
@@ -181,6 +185,7 @@ cc_binary {
 cc_library_static {
     name: "libbluetoothtbd_hal",
     defaults: ["fluoride_defaults"],
+    sdclang: true,
     include_dirs: ["system/bt"],
     header_libs: ["libbluetooth_headers"],
     srcs: [

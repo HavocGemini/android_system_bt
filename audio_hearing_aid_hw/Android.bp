@@ -1,3 +1,4 @@
+//
 cc_defaults {
     name: "audio_hearing_aid_hw_defaults",
     defaults: ["fluoride_defaults"],
@@ -5,7 +6,8 @@ cc_defaults {
         "system/bt",
         "system/bt/include",
         "system/bt/audio_hearing_aid_hw/include",
-    ]
+    ],
+    sdclang: true,
 }
 
 // Audio A2DP shared library for target
@@ -22,6 +24,7 @@ cc_library {
         "liblog",
     ],
     static_libs: ["libosi"],
+    sdclang: true,
 }
 
 cc_library_static {
@@ -30,6 +33,7 @@ cc_library_static {
     srcs: [
         "src/audio_hearing_aid_hw_utils.cc",
     ],
+    sdclang: true,
 }
 
 // Audio A2DP library unit tests for target and host

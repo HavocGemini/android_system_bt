@@ -3,6 +3,7 @@
 cc_library_static {
     name: "libbt-utils",
     defaults: ["fluoride_defaults"],
+    sdclang: true,
     local_include_dirs: [
         "include",
     ],

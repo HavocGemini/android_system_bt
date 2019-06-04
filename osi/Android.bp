@@ -1,3 +1,4 @@
+//
 cc_defaults {
     name: "fluoride_osi_defaults",
     defaults: ["fluoride_defaults"],
@@ -14,6 +15,7 @@ cc_defaults {
 cc_test_library {
     name: "libosi-AllocationTestHarness",
     defaults: ["fluoride_osi_defaults"],
+    sdclang: true,
     srcs: [
         "test/AllocationTestHarness.cc",
     ],
@@ -40,6 +42,7 @@ cc_test_library {
 cc_library_static {
     name: "libosi",
     defaults: ["fluoride_osi_defaults"],
+    sdclang: true,
     // TODO(mcchou): Remove socket_utils sources after platform specific
     // dependencies are abstracted.
     srcs: [
